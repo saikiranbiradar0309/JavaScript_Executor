@@ -1,0 +1,16 @@
+package JavaScript_Executor;
+
+import org.openqa.selenium.JavascriptExecutor;
+
+public class Demo5_Open_URL_Without_Get {
+
+	public static void main(String[] args) {
+		
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		js.executeScript("");
+
+	}
+
+}

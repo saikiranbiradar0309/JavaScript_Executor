@@ -1,0 +1,10 @@
+package JavaScript_Executor;
+
+public class Demo5_Open_URL_Without_Get {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

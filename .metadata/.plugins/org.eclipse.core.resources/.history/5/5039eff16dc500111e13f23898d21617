@@ -1,0 +1,30 @@
+package JavaScript_Executor;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo5_Open_URL_Without_Get {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		WebDriver driver = new ChromeDriver();
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		Thread.sleep(3000);
+		
+		// Open a URL without using driver.get()
+		js.executeScript("window.location='https://www.google.com'");
+		
+		Thread.sleep(3000);
+		
+		js.executeScript("window.location='https://www.facebook.com'");
+		
+		
+		// Refresh page without refresh() method
+		js.executeScript("history.go(0)");
+
+	}
+
+}

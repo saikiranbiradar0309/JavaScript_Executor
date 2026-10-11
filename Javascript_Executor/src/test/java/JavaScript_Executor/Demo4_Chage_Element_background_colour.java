@@ -1,0 +1,30 @@
+package JavaScript_Executor;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo4_Chage_Element_background_colour {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://demoqa.com/automation-practice-form");
+		
+		WebElement firstName = driver.findElement(By.id("firstName"));
+		
+		
+		WebElement submit = driver.findElement(By.xpath("//button[@id='submit']"));
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].style.backgroundColor='rgb(20, 20, 20)'", firstName);
+		js.executeScript("arguments[0].style.backgroundColor='rgb(235, 17, 17)'", submit);
+
+	}
+
+}

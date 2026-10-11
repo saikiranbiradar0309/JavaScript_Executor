@@ -1,0 +1,10 @@
+package JavaScript_Executor;
+
+public class Demo6_Capture_Title {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
